@@ -1,0 +1,99 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-bg);
+  padding: 16px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.sidebar__header {
+  display: flex;
+  gap: 10px;
+  padding-top: 16px;
+}
+
+.sidebar__header-logo {
+  align-self: center;
+}
+
+.sidebar__header-title {
+  margin: auto;
+  padding-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar__header-description {
+  margin: 0;
+  font-size: 10px;
+}
+
+.sidebar__links-container {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.sidebar__link:hover {
+  background: #cccbcb;
+  cursor: default;
+}
+
+.sidebar__link_active {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.sidebar__link_active:hover {
+  background: #ede9fe;
+}
+
+.sidebar__user-container {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar__user-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar__user-email {
+  margin: 0;
+  font-size: 12px;
+  color: #888;
+}
