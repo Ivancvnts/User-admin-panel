@@ -1,0 +1,40 @@
+.sidepanel {
+  width: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: white;
+  border: none;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.sidepanel_open {
+  width: 320px;
+  transform: translateX(0);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+}
+
+.sidepanel__content {
+  width: 320px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.sidepanel__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidepanel__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sidepanel__closebtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

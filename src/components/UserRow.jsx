@@ -1,13 +1,13 @@
 import { Eye } from "lucide-react";
 
-function UserRow({ user }) {
+function UserRow({ user, openUserDetails }) {
   return (
     <tr>
       <td>{user.id}</td>
       <td>
         <div className="users__user-cell">
           <img
-            className="users__user-avatar"
+            className="avatar avatar_size_sm"
             src={`https://ui-avatars.com/api/?name=${user.name}&background=6d28d9&color=fff`}
             alt=""
           />
@@ -30,7 +30,12 @@ function UserRow({ user }) {
         </span>
       </td>
       <td>
-        <Eye />
+        <button
+          className="users__detailsbtn"
+          onClick={() => openUserDetails(user)}
+        >
+          <Eye />
+        </button>
       </td>
     </tr>
   );

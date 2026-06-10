@@ -1,0 +1,64 @@
+.adduser {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adduser__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.adduser__input-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.adduser__input {
+  width: 100%;
+  padding: 4px 4px;
+  border: 2px solid var(--color-border);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.adduser__input_error {
+  border-color: #dc2626;
+}
+
+.adduser__error {
+  margin: 0;
+  font-size: 10px;
+  color: #dc2626;
+}
+
+.adduser__buttons {
+  display: flex;
+  gap: 8px;
+  padding-top: 24px;
+}
+
+.adduser__btn {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 2px solid var(--color-border);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.adduser__btn_save {
+  border: none;
+  background: var(--color-primary);
+  color: white;
+}

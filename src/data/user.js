@@ -1,10 +1,13 @@
-export const users = [
+export const usersArr = [
   {
     id: 1,
     name: "Ana García",
     email: "ana@email.com",
     role: "Admin",
     active: true,
+    phone: "+34 612 345 678",
+    registrationDate: "15/03/2024",
+    address: "Calle Falsa 123, Madrid, España",
   },
   {
     id: 2,
@@ -12,6 +15,9 @@ export const users = [
     email: "luis@email.com",
     role: "Editor",
     active: true,
+    phone: "+34 698 234 567",
+    registrationDate: "22/05/2024",
+    address: "Av. Diagonal 456, Barcelona, España",
   },
   {
     id: 3,
@@ -19,6 +25,9 @@ export const users = [
     email: "sara@email.com",
     role: "User",
     active: false,
+    phone: "+34 677 123 456",
+    registrationDate: "08/01/2024",
+    address: "Calle Gran Vía 78, Bilbao, España",
   },
   {
     id: 4,
@@ -26,5 +35,8 @@ export const users = [
     email: "carlos@email.com",
     role: "Editor",
     active: true,
+    phone: "+34 654 987 321",
+    registrationDate: "30/07/2024",
+    address: "Plaza Mayor 12, Sevilla, España",
   },
 ];

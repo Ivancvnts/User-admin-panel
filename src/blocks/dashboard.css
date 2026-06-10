@@ -1,7 +1,7 @@
 .dashboard {
   display: flex;
-  height: 90vh;
-  width: 95%;
+  height: 95vh;
+  width: 98%;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -10,4 +10,6 @@
 .dashboard__content {
   flex: 1;
   background: var(--color-bg-light);
+  overflow: hidden;
+  position: relative;
 }

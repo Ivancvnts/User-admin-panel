@@ -39,7 +39,7 @@ function Sidebar() {
         </div>
         <div className="sidebar__user-container">
           <img
-            className="sidebar__avatar"
+            className="avatar avatar_size_md"
             src="https://ui-avatars.com/api/?name=Admin&background=6d28d9&color=fff"
             alt="avatar"
           />
