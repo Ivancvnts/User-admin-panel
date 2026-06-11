@@ -1,6 +1,6 @@
-import { Eye } from "lucide-react";
+import { Eye, Trash2 } from "lucide-react";
 
-function UserRow({ user, openUserDetails }) {
+function UserRow({ user, openUserDetails, deleteUser }) {
   return (
     <tr>
       <td>{user.id}</td>
@@ -30,12 +30,17 @@ function UserRow({ user, openUserDetails }) {
         </span>
       </td>
       <td>
-        <button
-          className="users__detailsbtn"
-          onClick={() => openUserDetails(user)}
-        >
-          <Eye />
-        </button>
+        <div className="users__actions">
+          <button
+            className="users__actionbtn"
+            onClick={() => openUserDetails(user)}
+          >
+            <Eye />
+          </button>
+          <button className="users__actionbtn" onClick={() => deleteUser(user)}>
+            <Trash2 />
+          </button>
+        </div>
       </td>
     </tr>
   );

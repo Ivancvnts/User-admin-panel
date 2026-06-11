@@ -10,6 +10,7 @@ function Users() {
   const [selectedUser, setSelectedUser] = useState(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
   const [users, setUsers] = useState(usersArr);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchQuery.toLowerCase()),
@@ -38,11 +39,32 @@ function Users() {
       ...newUser,
       id: users.length + 1,
       active: true,
-      registrationDate = new Date().toLocaleDateString(),
+      registrationDate: new Date().toLocaleDateString(),
     };
 
     setUsers([...users, user]);
     handleCloseSidePanel();
+  }
+
+  function handleDeleteUser() {
+    const updatedUserList = users.filter((user) => user.id !== selectedUser.id);
+
+    setUsers(updatedUserList);
+    if (isPanelOpen) {
+      setIsPanelOpen(false);
+    }
+    handleCloseSidePanel();
+    handleCloseModal();
+  }
+
+  function handleOpenModal(user) {
+    setIsModalOpen(true);
+    setSelectedUser(user);
+  }
+
+  function handleCloseModal() {
+    setIsModalOpen(false);
+    setSelectedUser(null);
   }
 
   return (
@@ -88,6 +110,7 @@ function Users() {
                   key={user.id}
                   user={user}
                   openUserDetails={handleOpenUserDetails}
+                  deleteUser={handleOpenModal}
                 />
               ))}
             </tbody>
@@ -103,6 +126,27 @@ function Users() {
           addUser={handleAddUser}
         />
       </div>
+      {isModalOpen && (
+        <div className="modal__overlay">
+          <div className="modal">
+            <p className="modal__message">
+              ¿Estás seguro de que quieres eliminar a{" "}
+              <strong>{selectedUser.name}</strong>?
+            </p>
+            <div className="modal_buttons">
+              <button className="modal__btn" onClick={handleCloseModal}>
+                Cancelar
+              </button>
+              <button
+                className="modal__btn modal__btn_confirm"
+                onClick={handleDeleteUser}
+              >
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

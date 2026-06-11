@@ -157,7 +157,12 @@
   color: #991b1b;
 }
 
-.users__detailsbtn {
+.users__actions {
+  display: flex;
+  justify-content: center;
+}
+
+.users__actionbtn {
   display: flex;
   justify-self: center;
   align-items: center;
@@ -170,7 +175,7 @@
   cursor: pointer;
 }
 
-.users__detailsbtn:hover {
+.users__actionbtn:hover {
   color: black;
   border: 2px solid black;
 }
