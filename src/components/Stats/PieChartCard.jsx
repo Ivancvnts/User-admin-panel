@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UsersContext } from "../../contexts/UsersContext.js";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
-function PieChartCard({ data, title, colors, totalUsers, uniqueRoles }) {
+function PieChartCard({ data, title, colors, totalUsers }) {
   return (
     <div className="pie-char-card">
       <p className="pie-char-card__title">{title}</p>

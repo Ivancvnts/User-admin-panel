@@ -9,7 +9,7 @@ import { UserRoundX } from "lucide-react";
 import { CircleStar } from "lucide-react";
 
 const ROLECOLORS = ["#6d28d9", "#1d4ed8", "#374151"];
-const ACTIVECOLORS = ["#065f46", "#854d0e"];
+const ACTIVECOLORS = ["#065f46", "#8e5311"];
 
 function Stats() {
   const { users } = useContext(UsersContext);
@@ -73,14 +73,12 @@ function Stats() {
             title="Usuarios por rol"
             colors={ROLECOLORS}
             totalUsers={totalUsers}
-            uniqueRoles={uniqueRoles}
           ></PieChartCard>
           <PieChartCard
             data={usersByState}
             title="Usuarios activos"
             colors={ACTIVECOLORS}
             totalUsers={totalUsers}
-            uniqueRoles={uniqueRoles}
           ></PieChartCard>
         </div>
       </div>
