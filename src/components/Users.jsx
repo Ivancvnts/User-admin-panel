@@ -1,15 +1,16 @@
 import { Search, Plus } from "lucide-react";
 import { useState } from "react";
-import { usersArr } from "../data/user.js";
+import { useContext } from "react";
+import { UsersContext } from "../contexts/UsersContext.js";
 
 import UserRow from "./UserRow";
 import SidePanel from "./SidePanel";
 
 function Users() {
+  const { users, setUsers } = useContext(UsersContext);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedUser, setSelectedUser] = useState(null);
   const [isPanelOpen, setIsPanelOpen] = useState(false);
-  const [users, setUsers] = useState(usersArr);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filteredUsers = users.filter((user) =>
@@ -71,10 +72,10 @@ function Users() {
     <>
       <div className={`users ${isPanelOpen ? "users--panel-open" : ""}`}>
         <div className="users__container">
-          <div className="users__header">
+          <div className="page-header">
             <div>
-              <h1 className="users__title">Usuarios</h1>
-              <p className="users__description">
+              <h1 className="page-header__title">Usuarios</h1>
+              <p className="page-header__description">
                 Gestiona y visualiza los usuarios registrados.
               </p>
             </div>

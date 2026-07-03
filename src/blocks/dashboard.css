@@ -12,4 +12,5 @@
   background: var(--color-bg-light);
   overflow: hidden;
   position: relative;
+  padding: 32px;
 }

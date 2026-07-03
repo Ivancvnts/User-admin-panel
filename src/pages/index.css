@@ -5,8 +5,12 @@
 @import url("../blocks/avatar.css");
 @import url("../blocks/dashboard.css");
 @import url("../blocks/sidebar.css");
+@import url("../blocks/pageheader.css");
 @import url("../blocks/users.css");
 @import url("../blocks/modal.css");
 @import url("../blocks/sidepanel.css");
 @import url("../blocks/userdetail.css");
 @import url("../blocks/adduser.css");
+@import url("../blocks/stats.css");
+@import url("../blocks/statscard.css");
+@import url("../blocks/piechartcard.css");

@@ -1,7 +1,11 @@
 import adminLogo from "../assets/admin-logo.svg";
 import { Users, User, UserPlus, ChartNoAxesColumn, Cog } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
+  const customClassName = ({ isActive }) =>
+    "sidebar__link" + (isActive ? " sidebar__link_active" : "");
+
   return (
     <>
       <div className="sidebar">
@@ -20,22 +24,18 @@ function Sidebar() {
           </div>
         </div>
         <div className="sidebar__links-container">
-          <a className="sidebar__link sidebar__link_active">
+          <NavLink to="/" className={customClassName}>
             <User />
             Usuarios
-          </a>
-          <a className="sidebar__link">
-            <UserPlus />
-            Agregar usuario
-          </a>
-          <a className="sidebar__link">
+          </NavLink>
+          <NavLink to="/estadisticas" className={customClassName}>
             <ChartNoAxesColumn />
             Estadisticas
-          </a>
-          <a className="sidebar__link">
+          </NavLink>
+          <NavLink to="/configuracion" className={customClassName}>
             <Cog />
             Configuración
-          </a>
+          </NavLink>
         </div>
         <div className="sidebar__user-container">
           <img
