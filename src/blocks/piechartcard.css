@@ -1,4 +1,4 @@
-.pie-char-card {
+.pie-chart-card {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,24 +10,25 @@
     0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.pie-char-card__title {
+.pie-chart-card__title {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
 }
 
-.pie-char-card__content {
+.pie-chart-card__content {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.pie-char-card__container {
+.pie-chart-card__container {
   position: relative;
-  width: 300;
-  height: 300;
+  width: 100%;
+  height: 270px;
 }
 
-.pie-char-card__total {
+.pie-chart-card__total {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,28 +36,29 @@
   text-align: center;
 }
 
-.pie-char-card__stat {
+.pie-chart-card__stat {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
 }
 
-.pie-char-card__description {
+.pie-chart-card__description {
   margin: 0;
   font-size: 18px;
   color: "#888";
 }
 
-.pie-char-card__role-list {
+.pie-chart-card__role-list {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
+  padding-top: 20px;
   margin: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 12px;
 }
 
-.pie-char-card__role-list li {
+.pie-chart-card__role-list li {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -64,7 +66,7 @@
   font-weight: 500;
 }
 
-.pie-char-card__role-list span {
+.pie-chart-card__role-list span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
