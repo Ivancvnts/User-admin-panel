@@ -16,7 +16,8 @@ body {
   align-items: center;
 }
 
-:root {
+body.light {
+  background: #e8e8e8;
   --color-primary: #6d28d9;
   --color-primary-light: #ede9fe;
   --color-border: #e0e0e0;
@@ -24,4 +25,15 @@ body {
   --color-bg-light: #fff;
   --color-text: #333;
   --color-text-muted: #888;
+}
+
+body.dark {
+  background: #111827;
+  --color-primary: #a78bfa;
+  --color-primary-light: #2e1065;
+  --color-border: #374151;
+  --color-bg: #1f2937;
+  --color-bg-light: #111827;
+  --color-text: #f9fafb;
+  --color-text-muted: #9ca3af;
 }

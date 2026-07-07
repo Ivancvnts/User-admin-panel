@@ -62,7 +62,7 @@ function Stats() {
           ></StatsCard>
           <StatsCard
             icon={<CircleStar size="36" strokeWidth="1.5" />}
-            title={"Roles diferetes"}
+            title={"Roles diferentes"}
             data={totalRoles}
             color={"blue"}
           ></StatsCard>

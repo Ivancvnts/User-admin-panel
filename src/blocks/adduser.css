@@ -20,6 +20,8 @@
 .adduser__input {
   width: 100%;
   padding: 4px 4px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   border: 2px solid var(--color-border);
   border-radius: 5px;
   font-size: 12px;
@@ -55,6 +57,7 @@
   white-space: nowrap;
   flex-grow: 1;
   justify-content: center;
+  color: var(--color-text);
 }
 
 .adduser__btn_save {

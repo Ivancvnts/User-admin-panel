@@ -5,6 +5,7 @@
   height: 100%;
   gap: 10px;
   overflow: hidden;
+  color: var(--color-text);
 }
 
 .users__container {
@@ -30,12 +31,15 @@
   align-items: center;
   border: 1px solid var(--color-border);
   border-radius: 10px;
+  background-color: var(--color-bg);
   font-size: 12px;
 }
 
 .users__input {
   border: none;
   outline: none;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 .users__add-btn {
@@ -102,7 +106,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: black;
+  color: var(--color-text);
   font-weight: 600;
 }
 
@@ -152,7 +156,7 @@
   border: 2px solid var(--color-border);
   border-radius: 7px;
   background: none;
-  color: var(--color-border);
+  color: var(--color-text);
   cursor: pointer;
 }
 

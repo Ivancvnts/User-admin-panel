@@ -1,7 +1,6 @@
-import { Search, Plus } from "lucide-react";
-import { useState } from "react";
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import { UsersContext } from "../contexts/UsersContext.js";
+import { Search, Plus } from "lucide-react";
 
 import UserRow from "./UserRow";
 import SidePanel from "./SidePanel";
